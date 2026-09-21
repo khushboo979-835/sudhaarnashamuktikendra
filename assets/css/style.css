@@ -1,0 +1,323 @@
+:root {
+    --primary-color: #00B0F0;
+    --secondary-color: #6FBF4B;
+    --tertiary-color: #ffffff;
+    --primary-font: "Times New Roman", serif;
+}
+
+/* =================================== */
+.hero .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.hero .carousel-caption h4 {
+    font-weight: 700;
+    font-size: 44px;
+    color: var(--primary-color, #ffc107);
+    /* fallback */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero .carousel-caption h3 {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--tertiary-color, #fff);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero .carousel-caption .btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s;
+    background-color: var(--primary-color, #ffc107);
+    color: #000;
+    border: none;
+    margin-top: 10px;
+}
+
+.hero .carousel-caption .btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary-color-hover, #e0a800);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero .carousel-caption {
+        display: none;
+    }
+}
+
+
+/* ====================================== */
+.head-title h2 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-family: var(--primary-font);
+}
+
+.head-title span {
+    color: var(--secondary-color);
+    font-size: 60px;
+}
+
+/* ===================================== */
+@media screen and (max-width: 768px) {
+    .head-title h2 {
+        font-size: 30px;
+    }
+
+    .head-title span {
+        font-size: 40px;
+    }
+
+}
+
+/* ====================================== */
+.title {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-family: var(--primary-font);
+}
+
+/* ===================================== */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
+/* ================================================= */
+.treatment {
+    background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)),
+        url(../images/background/1.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: var(--tertiary-color);
+}
+
+/* ================================================= */
+.info-card h6 {
+    font-weight: 600;
+}
+
+.info-card p {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.info-card {
+    border: 1px solid var(--primary-color);
+    transition: all 0.6s ease-in-out;
+}
+
+.contact-section .card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../images/background/3.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.contact-section label {
+    margin-bottom: 10px;
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+.contact-section .form-control,
+.contact-section .form-select {
+    border-radius: 0px;
+    border: 1px solid var(--tertiary-color);
+    margin-bottom: 10px;
+}
+
+.contact,
+.services,
+.alcohol {
+    background: url(../images/background/4.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* color: var(--tertiary-color); */
+}
+
+/* ============================================= */
+.why-choose-us h2 {
+    font-weight: bold;
+    font-family: var(--primary-font);
+}
+
+.why-choose-us p {
+    font-family: var(--primary-font);
+}
+
+.choose-card {
+    background: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--primary-color);
+}
+
+.choose-card:hover {
+    background: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.choose-card i {
+    transition: transform 0.3s ease;
+    color: var(--primary-color);
+}
+
+.choose-card:hover i {
+    transform: scale(1.1);
+    color: var(--secondary-color);
+}
+
+/* =========================================== */
+.counter-section {
+    background: var(--secondary-color);
+}
+
+.counter {
+    font-size: 2.5rem;
+    color: var(--tertiary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.counter+p {
+    font-size: 1.1rem;
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+/* ================================================= */
+.services .card {
+    margin-bottom: 20px;
+    border-radius: 16px;
+    height: 100%;
+    border: 1px solid #eaeaea;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.services .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.services .card img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    transition: transform 0.4s ease;
+}
+
+.services .card:hover img {
+    transform: scale(1.05);
+}
+
+.services .card h4 {
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.services .card p {
+    color: #333;
+    font-family: var(--primary-font);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.services .card a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.services .card a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ================================================== */
+.btn-modern {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #fcb045, var(--secondary-color), var(--primary-color));
+    background-size: 200%;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-modern:hover {
+    background-position: right center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.btn-modern:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
